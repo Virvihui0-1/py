@@ -1,0 +1,49 @@
+
+<Itemlabel@TextInput>:
+    font_size:'26sp'
+    size_hint:.1,.26
+    halign:'center'
+    valign:'middle'
+    input_type:'number'
+    input_filter:'int'
+<Godv>:
+    rows:6
+    padding:80
+    label1:label_1
+    label2:label_2
+    input1:input_1
+    input2:input_2
+    input3:input_3
+
+    Itemlabel:
+        id:input_1
+        multiline:False
+        hint_text:'4/1 Cr2O3'
+
+    Itemlabel:
+        id:input_2
+        multiline:False
+        hint_text:'5/1 Cr2O3'
+
+    Itemlabel:
+        id:input_3
+        multiline:False
+        hint_text:'кубы'
+
+
+
+    Label:
+        id:label_1
+        #text:'Бихромат 2,4(cm)'
+        font_size:20
+    Label:
+        id:label_2
+        #text:'Вода 3,6(cm)'
+        font_size:20
+
+    Button:
+        text:'Расчет'
+        font_size:20
+        size_hint:.1,.4
+        on_press:
+            root.Ras()
